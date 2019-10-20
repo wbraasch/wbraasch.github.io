@@ -1,0 +1,13 @@
+
+body {
+    font-family: Baskerville; 
+    width: 950px; 
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+header {
+    text-align: center;
+    font-size: 150%;
+    font-family: monospace;
+}
