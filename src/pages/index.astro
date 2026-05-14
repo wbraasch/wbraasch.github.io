@@ -1,0 +1,284 @@
+---
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>William "Billy" Braasch</title>
+<meta
+name="description"
+content="Personal website of William “Billy” Braasch, a postdoctoral researcher in quantum information science at QuICS, University of Maryland."
+/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+<style>
+:root {
+--background: #f5f6f8;
+--foreground: #111827;
+--muted: #4b5563;
+--light-muted: #6b7280;
+--rule: #d7dce3;
+--accent: #334155;
+--link: #1f4f7a;
+}
+
+* {
+box-sizing: border-box;
+}
+
+html {
+font-family:
+"Inter",
+system-ui,
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+sans-serif;
+background: var(--background);
+color: var(--foreground);
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+min-height: 100vh;
+background: var(--background);
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+main {
+width: min(100%, 73rem);
+margin: 0 auto;
+padding: clamp(1.5rem, 4vw, 3.5rem) clamp(1.25rem, 3vw, 2rem);
+}
+
+.profile {
+display: grid;
+grid-template-columns: 8.2rem minmax(0, 1fr);
+gap: 1.6rem;
+align-items: start;
+padding-bottom: 2.5rem;
+}
+
+.portrait {
+width: 8.2rem;
+height: 8.2rem;
+border-radius: 999px;
+object-fit: cover;
+border: 3px solid white;
+box-shadow: 0 0 0 1px var(--rule);
+background: white;
+}
+
+h1 {
+margin: 0;
+color: var(--foreground);
+font-size: clamp(2rem, 4vw, 3rem);
+font-weight: 700;
+letter-spacing: -0.045em;
+line-height: 1.05;
+}
+
+.affiliation {
+margin: 0.75rem 0 0;
+color: var(--muted);
+font-size: clamp(1rem, 1.5vw, 1.2rem);
+line-height: 1.5;
+}
+
+.description {
+max-width: 56rem;
+margin: 1rem 0 0;
+color: var(--muted);
+font-size: clamp(1rem, 1.5vw, 1.18rem);
+line-height: 1.55;
+}
+
+.links {
+display: flex;
+flex-wrap: wrap;
+gap: 0.7rem 1.2rem;
+margin-top: 1.45rem;
+padding: 0;
+list-style: none;
+}
+
+.links a {
+color: var(--muted);
+font-size: 0.96rem;
+font-weight: 600;
+text-decoration: none;
+}
+
+.links a:hover {
+color: var(--link);
+text-decoration: underline;
+text-underline-offset: 0.22em;
+}
+
+.content {
+max-width: 68rem;
+border-top: 1px solid var(--rule);
+padding-top: 2.25rem;
+}
+
+section {
+max-width: 64rem;
+margin-bottom: 2.35rem;
+}
+
+h2 {
+margin: 0 0 1rem;
+color: var(--foreground);
+font-size: clamp(1.35rem, 2.3vw, 1.75rem);
+font-weight: 700;
+letter-spacing: -0.035em;
+line-height: 1.2;
+}
+
+p {
+max-width: 62rem;
+margin: 0;
+color: var(--foreground);
+font-size: clamp(1.02rem, 1.4vw, 1.15rem);
+line-height: 1.65;
+}
+
+p + p {
+margin-top: 1rem;
+}
+
+a {
+color: var(--link);
+text-decoration-thickness: 1px;
+text-underline-offset: 0.22em;
+}
+
+a:hover {
+color: var(--foreground);
+}
+
+.site-footer {
+margin-top: 3rem;
+padding-top: 1rem;
+border-top: 1px solid var(--rule);
+color: var(--light-muted);
+font-size: 0.84rem;
+line-height: 1.5;
+}
+
+.site-footer a {
+color: inherit;
+}
+
+@media (max-width: 680px) {
+main {
+padding-top: 1.25rem;
+}
+
+.profile {
+grid-template-columns: 1fr;
+gap: 1rem;
+}
+
+.portrait {
+width: 6.5rem;
+height: 6.5rem;
+}
+
+.content {
+padding-top: 1.75rem;
+}
+}
+</style>
+</head>
+
+<body>
+<main>
+<header class="profile">
+<img
+class="portrait"
+src="/images/billy.jpg"
+alt="Portrait of William Braasch"
+/>
+
+<div>
+<h1>William "Billy" Braasch</h1>
+
+<p class="affiliation">
+Postdoctoral researcher at
+QuICS, University of Maryland
+</p>
+
+<p class="description">
+Quantum thermodynamics, quantum algorithms, and mathematical structures of nonclassicality
+</p>
+
+<ul class="links" aria-label="Selected links">
+<li>
+<a href="https://scholar.google.com/citations?hl=en&user=uLIvPloAAAAJ">
+Google Scholar
+</a>
+</li>
+<li>
+<a href="mailto:wbraasch@umd.edu">Email</a>
+</li>
+</ul>
+</div>
+</header>
+
+<div class="content">
+<section id="research" aria-labelledby="research-heading">
+<h2 id="research-heading">Research</h2>
+
+<p>
+I study the mathematical structures that distinguish quantum 
+theory from classical theories, including noncommutativity, 
+symmetry, contextuality, quasiprobability, and thermodynamic 
+constraints. I use these structures to understand the capabilities 
+and limitations of quantum information processing.
+</p>
+
+<p>
+My recent work connects quantum thermodynamics, quantum algorithms, 
+and mathematical physics, with projects on Hamiltonian simulation, 
+noncommuting conserved quantities, and quasiprobability representations 
+such as the Kirkwood–Dirac and Wigner distributions.
+</p>
+
+</section>
+
+<section id="outside-research" aria-labelledby="outside-heading">
+<h2 id="outside-heading">Hobbies</h2>
+
+<p>
+Outside research, I spend as much time as I can in the mountains
+and forests of New England. I particularly enjoy rock climbing and
+cross-country skiing. I also like eating yogurt with a mini spatula.
+</p>
+</section>
+
+<section id="contact" aria-labelledby="contact-heading">
+<h2 id="contact-heading">Contact</h2>
+
+<p>
+Feel free to reach me at
+<a href="mailto:wbraasch@umd.edu">wbraasch@umd.edu</a>.
+</p>
+</section>
+</div>
+
+<footer class="site-footer">
+Built with <a href="https://astro.build/">Astro</a>.
+</footer>
+</main>
+</body>
+</html>

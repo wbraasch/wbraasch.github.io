@@ -1,0 +1,65 @@
+---
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/600.css";
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page not found | William "Billy" Braasch</title>
+<style>
+:root {
+--background: #f5f6f8;
+--foreground: #111827;
+--muted: #4b5563;
+--link: #1f4f7a;
+}
+
+html {
+font-family: "Inter", system-ui, sans-serif;
+background: var(--background);
+color: var(--foreground);
+}
+
+body {
+margin: 0;
+}
+
+main {
+width: min(100%, 42rem);
+margin: 0 auto;
+padding: 4rem 1.25rem;
+}
+
+h1 {
+margin: 0 0 1rem;
+font-size: clamp(2rem, 6vw, 3.5rem);
+line-height: 1.05;
+letter-spacing: -0.04em;
+}
+
+p {
+color: var(--muted);
+font-size: 1.05rem;
+line-height: 1.6;
+}
+
+a {
+color: var(--link);
+text-underline-offset: 0.22em;
+}
+</style>
+</head>
+
+<body>
+<main>
+<h1>Page not found</h1>
+<p>
+This page does not exist. You can return to
+<a href="/">the homepage</a>.
+</p>
+</main>
+</body>
+</html>

@@ -1,4 +1,5 @@
-# Billy Braasch Personal Website
+# wbraasch.github.io
 
-Published [wbraasch.github.io](https://wbraasch.github.io)
+Personal website for William "Billy" Braasch.
 
+Built with [Astro](https://astro.build/).
